@@ -14,16 +14,20 @@ namespace Library.App.Books.Queries.GetBookList
 	public class GetBookListQueryHandler : IRequestHandler<GetBookListQuery, List<BookDetailVm>>
     {
         private readonly IMapper _mapper;
-        private readonly IMongoDBService _dbService;
+        public IMongoCollection<Book> _books { get; set; }
 
-        public GetBookListQueryHandler(IMongoDBService dbContext, IMapper mapper) => (_dbService, _mapper) = (dbContext, mapper);
-
+        public GetBookListQueryHandler(IMongoDBSettings settings, IMongoClient mongoClient, IMapper mapper)
+        {
+            IMongoDatabase database = mongoClient.GetDatabase(settings.DatabaseName);
+            _books = database.GetCollection<Book>(settings.BooksCollectionName);
+            _mapper = mapper;
+        }
 
         public async Task<List<BookDetailVm>> Handle(GetBookListQuery request, CancellationToken cancellationToken)
         {
             var result = request.Id != null
-                ? await _dbService.GetBooksByAuthorAsync(request.Id)
-                : await _dbService.GetBooksAsync();
+                ? await _books.Find(Book => Book.AuthorsId.Contains(request.Id)).ToListAsync()
+                : await _books.Find(new BsonDocument()).ToListAsync();
 
             return result.Select(a => _mapper.Map<BookDetailVm>(a)).ToList();
 

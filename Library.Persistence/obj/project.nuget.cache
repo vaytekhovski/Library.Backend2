@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zoZFr4UStKYkHD0mcKl736XVwwDsxf1Lk2NZrLd3ssqzkKCrVL1Wda34uAS/eEahQFRSAw0qd8Y/1wAOzet3Dw==",
+  "dgSpecHash": "UdCwyAhz191d9O0+6ytkIsj03sMgMTe3iv5MEk39UGEUXoZOMYi0a/N67Zvx/WUpk6G3wvALDnVeeD9BNZG62w==",
   "success": true,
-  "projectFilePath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj",
+  "projectFilePath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.Persistence/Library.Persistence.csproj",
   "expectedPackageFiles": [
     "/Users/vaytekhovsky/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/vaytekhovsky/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

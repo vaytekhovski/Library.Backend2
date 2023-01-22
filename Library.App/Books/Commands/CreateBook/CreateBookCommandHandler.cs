@@ -9,9 +9,13 @@ namespace Library.App.Books.Commands.CreateBook
 {
 	public class CreateBookCommandHandler : IRequestHandler<CreateBookCommand, string?>
     {
-        private readonly IMongoDBService _dbService;
+        public IMongoCollection<Book> _books { get; set; }
 
-        public CreateBookCommandHandler(IMongoDBService dbContext) => _dbService = dbContext;
+        public CreateBookCommandHandler(IMongoDBSettings settings, IMongoClient mongoClient)
+        {
+            IMongoDatabase database = mongoClient.GetDatabase(settings.DatabaseName);
+            _books = database.GetCollection<Book>(settings.BooksCollectionName);
+        }
 
         public async Task<string?> Handle(CreateBookCommand request, CancellationToken cancellationToken)
         {
@@ -24,7 +28,7 @@ namespace Library.App.Books.Commands.CreateBook
                 AuthorsId = request.AuthorsId
             };
 
-            await _dbService.CreateBookAsync(book);
+            await _books.InsertOneAsync(book);
 
             return book.Id;
         }

@@ -15,14 +15,18 @@ namespace Library.App.Authors.Queries.GetAuthorList
     public class GetAuthorListQueryHandler : IRequestHandler<GetAuthorListQuery, List<AuthorDetailVm>>
     {
         private readonly IMapper _mapper;
-        private readonly IMongoDBService _dbService;
+        public IMongoCollection<Author> _authors { get; set; }
 
-        public GetAuthorListQueryHandler(IMongoDBService dbContext, IMapper mapper) => (_dbService, _mapper) = (dbContext, mapper);
-
+        public GetAuthorListQueryHandler(IMongoDBSettings settings, IMongoClient mongoClient, IMapper mapper)
+        {
+            IMongoDatabase database = mongoClient.GetDatabase(settings.DatabaseName);
+            _authors = database.GetCollection<Author>(settings.AuthorsCollectionName);
+            _mapper = mapper;
+        }
 
         public async Task<List<AuthorDetailVm>> Handle(GetAuthorListQuery request, CancellationToken cancellationToken)
         {
-            var result = await _dbService.GetAuthorsAsync();
+            var result = await _authors.Find(new BsonDocument()).ToListAsync();
             return result.Select(a => _mapper.Map<AuthorDetailVm>(a)).ToList();
 
         }

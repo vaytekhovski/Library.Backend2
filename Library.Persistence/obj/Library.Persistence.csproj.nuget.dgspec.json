@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj": {}
+    "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.Persistence/Library.Persistence.csproj": {}
   },
   "projects": {
-    "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/Library.App.csproj": {
+    "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.App/Library.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/Library.App.csproj",
+        "projectUniqueName": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.App/Library.App.csproj",
         "projectName": "Library.App",
-        "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/Library.App.csproj",
+        "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.App/Library.App.csproj",
         "packagesPath": "/Users/vaytekhovsky/.nuget/packages/",
-        "outputPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/obj/",
+        "outputPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.App/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vaytekhovsky/.nuget/NuGet/NuGet.Config"
@@ -95,14 +95,14 @@
         }
       }
     },
-    "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj": {
+    "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.Persistence/Library.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj",
+        "projectUniqueName": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.Persistence/Library.Persistence.csproj",
         "projectName": "Library.Persistence",
-        "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj",
+        "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.Persistence/Library.Persistence.csproj",
         "packagesPath": "/Users/vaytekhovsky/.nuget/packages/",
-        "outputPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/obj/",
+        "outputPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vaytekhovsky/.nuget/NuGet/NuGet.Config"
@@ -117,8 +117,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/Library.App.csproj": {
-                "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/Library.App.csproj"
+              "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.App/Library.App.csproj": {
+                "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.App/Library.App.csproj"
               }
             }
           }

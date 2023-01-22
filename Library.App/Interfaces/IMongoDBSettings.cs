@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Library.Persistence
+namespace Library.App.Interfaces
 {
 	public interface IMongoDBSettings
     {

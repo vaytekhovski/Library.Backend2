@@ -11,14 +11,17 @@ namespace Library.App.Books.Commands.UpdateBook
 {
 	public class UpdateBookCommandHandler : IRequestHandler<UpdateBookCommand>
     {
-        private readonly IMongoDBService _dbService;
+        public IMongoCollection<Book> _books { get; set; }
 
-        public UpdateBookCommandHandler(IMongoDBService dbContext) => _dbService = dbContext;
-
+        public UpdateBookCommandHandler(IMongoDBSettings settings, IMongoClient mongoClient)
+        {
+            IMongoDatabase database = mongoClient.GetDatabase(settings.DatabaseName);
+            _books = database.GetCollection<Book>(settings.BooksCollectionName);
+        }
 
         public async Task<Unit> Handle(UpdateBookCommand request, CancellationToken cancellationToken)
         {
-            var book = await _dbService.GetBookAsync(request.Id);
+            var book = await _books.Find(b => b.Id == request.Id).FirstOrDefaultAsync();
 
             if (book == null || book.Id != request.Id)
             {
@@ -28,7 +31,7 @@ namespace Library.App.Books.Commands.UpdateBook
             book.Description = request.Description;
             book.CreationDate = request.CreationDate;
             book.AuthorsId = request.AuthorsId;
-            await _dbService.UpdateBookAsync(book.Id, book);
+            await _books.ReplaceOneAsync(b => b.Id == request.Id, book);
 
             return Unit.Value;
         }

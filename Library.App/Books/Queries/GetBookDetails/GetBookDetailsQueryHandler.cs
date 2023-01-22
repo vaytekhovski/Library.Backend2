@@ -12,13 +12,18 @@ namespace Library.App.Books.Queries.GetBookDetails
 	public class GetBookDetailsQueryHandler : IRequestHandler<GetBookDetailsQuery, BookDetailVm>
     {
         private readonly IMapper _mapper;
-        private readonly IMongoDBService _dbService;
+        public IMongoCollection<Book> _books { get; set; }
 
-        public GetBookDetailsQueryHandler(IMongoDBService dbContext, IMapper mapper) => (_dbService, _mapper) = (dbContext, mapper);
+        public GetBookDetailsQueryHandler(IMongoDBSettings settings, IMongoClient mongoClient, IMapper mapper)
+        {
+            IMongoDatabase database = mongoClient.GetDatabase(settings.DatabaseName);
+            _books = database.GetCollection<Book>(settings.BooksCollectionName);
+            _mapper = mapper;
+        }
 
         public async Task<BookDetailVm> Handle(GetBookDetailsQuery request, CancellationToken cancellationToken)
         {
-            var book = await _dbService.GetBookAsync(request.Id);
+            var book = await _books.Find(b => b.Id == request.Id).FirstOrDefaultAsync();
 
             if (book == null || book.Id != request.Id)
             {
