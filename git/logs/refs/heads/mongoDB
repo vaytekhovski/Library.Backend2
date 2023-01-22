@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 5d8c9acaeb814fb1baa65961c7bdd4b7f638c2b8 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674046207 +0300	branch: Created from master
+5d8c9acaeb814fb1baa65961c7bdd4b7f638c2b8 9c5dc8bffa5e671ec59919dbe342d0c1c0279892 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674082099 +0300	commit: use mongo
+9c5dc8bffa5e671ec59919dbe342d0c1c0279892 4584c87f6825a236e3074b164c5bdb4e619b6195 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674082120 +0300	commit: also files for use mongoDB

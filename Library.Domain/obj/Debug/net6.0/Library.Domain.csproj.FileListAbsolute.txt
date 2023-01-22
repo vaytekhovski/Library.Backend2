@@ -1,0 +1,5 @@
+/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Domain/obj/Debug/net6.0/Library.Domain.csproj.AssemblyReference.cache
+/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Domain/obj/Debug/net6.0/Library.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Domain/obj/Debug/net6.0/Library.Domain.AssemblyInfoInputs.cache
+/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Domain/obj/Debug/net6.0/Library.Domain.AssemblyInfo.cs
+/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Domain/obj/Debug/net6.0/Library.Domain.csproj.CoreCompileInputs.cache

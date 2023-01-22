@@ -1,0 +1,17 @@
+0000000000000000000000000000000000000000 5d8c9acaeb814fb1baa65961c7bdd4b7f638c2b8 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674046165 +0300	commit (initial): init
+5d8c9acaeb814fb1baa65961c7bdd4b7f638c2b8 4584c87f6825a236e3074b164c5bdb4e619b6195 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674082184 +0300	merge mongoDB: Fast-forward
+4584c87f6825a236e3074b164c5bdb4e619b6195 2240632902804b92801b0b8a709310bab76b8735 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674082325 +0300	commit: change types
+2240632902804b92801b0b8a709310bab76b8735 741c1c424f0ab1b1fdc79d22654ed596f2c17ecd Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674084593 +0300	merge string_ID: Fast-forward
+741c1c424f0ab1b1fdc79d22654ed596f2c17ecd 937e691c8953f60466bd5e0187abc8f090134116 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674234673 +0300	commit: some changes
+937e691c8953f60466bd5e0187abc8f090134116 038b7debd62e5d754cddbac47bdce31933067920 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674234932 +0300	commit: temporary user in connection string
+038b7debd62e5d754cddbac47bdce31933067920 69b3ef58a0bb56474d212bd296c53cd87cb85dd2 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674406008 +0300	commit: use pure requests instead of dbService
+69b3ef58a0bb56474d212bd296c53cd87cb85dd2 10ab45b8437974a357dd52b5404ca549a6cbfb95 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674407646 +0300	revert: Revert "use pure requests instead of dbService"
+10ab45b8437974a357dd52b5404ca549a6cbfb95 5fd11d2a26f5f475ea7e4d1d6f594d2d4609b7f9 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674408102 +0300	revert: Revert "Revert "use pure requests instead of dbService""
+5fd11d2a26f5f475ea7e4d1d6f594d2d4609b7f9 10ab45b8437974a357dd52b5404ca549a6cbfb95 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674408300 +0300	reset: moving to 10ab45b8437974a357dd52b5404ca549a6cbfb95
+10ab45b8437974a357dd52b5404ca549a6cbfb95 038b7debd62e5d754cddbac47bdce31933067920 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674410906 +0300	reset: moving to 038b7debd62e5d754cddbac47bdce31933067920
+038b7debd62e5d754cddbac47bdce31933067920 10ab45b8437974a357dd52b5404ca549a6cbfb95 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674410916 +0300	pull origin master: Fast-forward
+10ab45b8437974a357dd52b5404ca549a6cbfb95 038b7debd62e5d754cddbac47bdce31933067920 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674410926 +0300	reset: moving to 038b7debd62e5d754cddbac47bdce31933067920
+038b7debd62e5d754cddbac47bdce31933067920 10ab45b8437974a357dd52b5404ca549a6cbfb95 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674410950 +0300	pull origin master: Fast-forward
+10ab45b8437974a357dd52b5404ca549a6cbfb95 ef47d8bff21faaa5c789c996685440403a7a6549 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674413856 +0300	commit: move App over Domain
+ef47d8bff21faaa5c789c996685440403a7a6549 59a18262d7d053085788d74e56f0b8cfe81a68d7 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674413897 +0300	commit: delete commands and queries from Domain
+59a18262d7d053085788d74e56f0b8cfe81a68d7 aa3a1317caf49ba4970870f8bc2e56e31ffc77d7 Арсений Вайтеховский <arseniyvoytehovskiy@gmail.com> 1674414647 +0300	commit: remove unused dependency

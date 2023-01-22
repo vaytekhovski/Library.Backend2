@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Interfaces\" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="MediatR" />
+    <None Remove="Common\" />
+    <None Remove="Authors\" />
+    <None Remove="Authors\Commands\" />
+    <None Remove="Authors\Commands\CreateAuthor\" />
+    <None Remove="Authors\Commands\UpdateAuthor\" />
+    <None Remove="Common\Exceptions\" />
+    <None Remove="Authors\Commands\DeleteAuthor\" />
+    <None Remove="Authors\Queries\" />
+    <None Remove="Authors\Queries\GetAuthorDetails\" />
+    <None Remove="AutoMapper" />
+    <None Remove="Common\Mapping\" />
+    <None Remove="Authors\Queries\GetAuthorList\" />
+    <None Remove="MediatR.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="MongoDB.Bson" />
+    <None Remove="MongoDB.Driver" />
+    <None Remove="FluentValidation" />
+    <None Remove="FluentValidation.DependencyInjectionExtensions" />
+    <None Remove="Common\Behaviors\" />
+    <None Remove="Books\" />
+    <None Remove="Books\Commands\" />
+    <None Remove="Books\Queries\" />
+    <None Remove="Books\Commands\CreateBook\" />
+    <None Remove="Books\Commands\DeleteBook\" />
+    <None Remove="Books\Commands\UpdateBook\" />
+    <None Remove="Books\Queries\GetBookDetails\" />
+    <None Remove="Books\Queries\GetBookList\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Common\" />
+    <Folder Include="Authors\" />
+    <Folder Include="Authors\Commands\" />
+    <Folder Include="Authors\Commands\CreateAuthor\" />
+    <Folder Include="Authors\Commands\UpdateAuthor\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Authors\Commands\DeleteAuthor\" />
+    <Folder Include="Authors\Queries\" />
+    <Folder Include="Authors\Queries\GetAuthorDetails\" />
+    <Folder Include="Common\Mapping\" />
+    <Folder Include="Authors\Queries\GetAuthorList\" />
+    <Folder Include="Common\Behaviors\" />
+    <Folder Include="Books\" />
+    <Folder Include="Books\Commands\" />
+    <Folder Include="Books\Queries\" />
+    <Folder Include="Books\Commands\CreateBook\" />
+    <Folder Include="Books\Commands\DeleteBook\" />
+    <Folder Include="Books\Commands\UpdateBook\" />
+    <Folder Include="Books\Queries\GetBookDetails\" />
+    <Folder Include="Books\Queries\GetBookList\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="MongoDB.Bson" Version="2.18.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,244 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.WebApi/Library.WebApi.csproj": {}
+  },
+  "projects": {
+    "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/Library.App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/Library.App.csproj",
+        "projectName": "Library.App",
+        "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/Library.App.csproj",
+        "packagesPath": "/Users/vaytekhovsky/.nuget/packages/",
+        "outputPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vaytekhovsky/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.4.0, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.4.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.18.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.18.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj",
+        "projectName": "Library.Persistence",
+        "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj",
+        "packagesPath": "/Users/vaytekhovsky/.nuget/packages/",
+        "outputPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vaytekhovsky/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/Library.App.csproj": {
+                "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/Library.App.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.18.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.18.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.WebApi/Library.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.WebApi/Library.WebApi.csproj",
+        "projectName": "Library.WebApi",
+        "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.WebApi/Library.WebApi.csproj",
+        "packagesPath": "/Users/vaytekhovsky/.nuget/packages/",
+        "outputPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.WebApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/vaytekhovsky/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj": {
+                "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.18.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
