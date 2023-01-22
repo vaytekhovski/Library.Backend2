@@ -10,20 +10,24 @@ namespace Library.App.Books.Commands.DeleteBook
 {
 	public class DeleteBookCommandHandler : IRequestHandler<DeleteBookCommand>
     {
-        private readonly IMongoDBService _dbService;
+        public IMongoCollection<Book> _books { get; set; }
 
-        public DeleteBookCommandHandler(IMongoDBService dbContext) => _dbService = dbContext;
+        public DeleteBookCommandHandler(IMongoDBSettings settings, IMongoClient mongoClient)
+        {
+            IMongoDatabase database = mongoClient.GetDatabase(settings.DatabaseName);
+            _books = database.GetCollection<Book>(settings.BooksCollectionName);
+        }
 
         public async Task<Unit> Handle(DeleteBookCommand request, CancellationToken cancellationToken)
         {
-            var book = await _dbService.GetBookAsync(request.Id);
+            var book = await _books.Find(b => b.Id == request.Id).FirstOrDefaultAsync();
 
             if (book == null || book.Id != request.Id)
             {
                 throw new NotFoundException(nameof(book), request.Id);
             }
 
-            await _dbService.DeleteBookAsync(book.Id);
+            await _books.DeleteOneAsync(b => b.Id == request.Id);
             return Unit.Value;
         }
     }

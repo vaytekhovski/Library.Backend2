@@ -12,14 +12,18 @@ namespace Library.App.Authors.Queries.GetAuthorDetails
 	public class GetAuthorDetailsQueryHandler : IRequestHandler<GetAuthorDetailsQuery,AuthorDetailVm>
 	{
         private readonly IMapper _mapper;
-        private readonly IMongoDBService _dbService;
+        public IMongoCollection<Author> _authors { get; set; }
 
-        public GetAuthorDetailsQueryHandler(IMongoDBService dbContext, IMapper mapper) => (_dbService, _mapper) = (dbContext, mapper);
-
+        public GetAuthorDetailsQueryHandler(IMongoDBSettings settings, IMongoClient mongoClient, IMapper mapper)
+        {
+            IMongoDatabase database = mongoClient.GetDatabase(settings.DatabaseName);
+            _authors = database.GetCollection<Author>(settings.AuthorsCollectionName);
+            _mapper = mapper;
+        }
 
         public async Task<AuthorDetailVm> Handle(GetAuthorDetailsQuery request, CancellationToken cancellationToken)
         {
-            var author = await _dbService.GetAuthorAsync(request.Id);
+            var author = await _authors.Find(a => a.Id == request.Id).FirstOrDefaultAsync();
 
             if (author == null || author.Id != request.Id)
             {

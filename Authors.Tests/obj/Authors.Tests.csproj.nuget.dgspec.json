@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vaytekhovsky/projects/LibraryControl.Backend/Authors.Tests/Authors.Tests.csproj": {}
+    "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Authors.Tests/Authors.Tests.csproj": {}
   },
   "projects": {
-    "/Users/vaytekhovsky/projects/LibraryControl.Backend/Authors.Tests/Authors.Tests.csproj": {
+    "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Authors.Tests/Authors.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Authors.Tests/Authors.Tests.csproj",
+        "projectUniqueName": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Authors.Tests/Authors.Tests.csproj",
         "projectName": "Authors.Tests",
-        "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Authors.Tests/Authors.Tests.csproj",
+        "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Authors.Tests/Authors.Tests.csproj",
         "packagesPath": "/Users/vaytekhovsky/.nuget/packages/",
-        "outputPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Authors.Tests/obj/",
+        "outputPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Authors.Tests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/vaytekhovsky/.nuget/NuGet/NuGet.Config"

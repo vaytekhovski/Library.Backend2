@@ -2012,11 +2012,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.WebApi/Library.WebApi.csproj",
+      "projectUniqueName": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/Library.WebApi.csproj",
       "projectName": "Library.WebApi",
-      "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.WebApi/Library.WebApi.csproj",
+      "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/Library.WebApi.csproj",
       "packagesPath": "/Users/vaytekhovsky/.nuget/packages/",
-      "outputPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.WebApi/obj/",
+      "outputPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/vaytekhovsky/.nuget/NuGet/NuGet.Config"
@@ -2031,8 +2031,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj": {
-              "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.Persistence/Library.Persistence.csproj"
+            "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.Persistence/Library.Persistence.csproj": {
+              "projectPath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.Persistence/Library.Persistence.csproj"
             }
           }
         }

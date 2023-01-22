@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XAuW6FEe3LwblECfNtimdw0SJJIHdsodF0zKWzYW+GRAqMzKUvmdn2cy4BSsn5oEbAdBSaTdtPljQY97f3vY8A==",
+  "dgSpecHash": "U2JF4Qfbkc/cw5bkF/ZPUbmhB3NPRwzVbestlzlftl5Ai6Z+zSBervqSfgtxC1MZQ/tNqEbsKHNNwCU0KtDWHg==",
   "success": true,
-  "projectFilePath": "/Users/vaytekhovsky/projects/LibraryControl.Backend/Library.App/Library.App.csproj",
+  "projectFilePath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.App/Library.App.csproj",
   "expectedPackageFiles": [
     "/Users/vaytekhovsky/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/vaytekhovsky/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

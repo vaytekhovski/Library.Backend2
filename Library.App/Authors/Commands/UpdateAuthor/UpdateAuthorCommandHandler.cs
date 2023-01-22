@@ -10,14 +10,17 @@ namespace Library.App.Authors.Commands.UpdateAuthor
 {
 	public class UpdateAuthorCommandHandler : IRequestHandler<UpdateAuthorCommand>
 	{
-        private readonly IMongoDBService _dbService;
+        public IMongoCollection<Author> _authors { get; set; }
 
-        public UpdateAuthorCommandHandler(IMongoDBService dbContext) => _dbService = dbContext;
-
+        public UpdateAuthorCommandHandler(IMongoDBSettings settings, IMongoClient mongoClient)
+        {
+            IMongoDatabase database = mongoClient.GetDatabase(settings.DatabaseName);
+            _authors = database.GetCollection<Author>(settings.AuthorsCollectionName);
+        }
 
         public async Task<Unit> Handle(UpdateAuthorCommand request, CancellationToken cancellationToken)
         {
-            var author = await _dbService.GetAuthorAsync(request.Id);
+            var author = await _authors.Find(a => a.Id == request.Id).FirstOrDefaultAsync();
 
             if (author == null || author.Id != request.Id)
             {
@@ -26,7 +29,7 @@ namespace Library.App.Authors.Commands.UpdateAuthor
 
             author.Biography = request.Biography;
             author.DateOfDeath = request.DateOfDeath;
-            await _dbService.UpdateAuthorAsync(author.Id, author);
+            await _authors.ReplaceOneAsync(a => a.Id == request.Id, author);
 
             return Unit.Value;
         }

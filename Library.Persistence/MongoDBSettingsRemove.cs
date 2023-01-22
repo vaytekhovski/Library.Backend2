@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Library.Persistence
 {
-	public class MongoDBSettings : IMongoDBSettings
+	public class MongoDBSettingsRemove : IMongoDBSettingsRemove
 	{
 		public string ConnectionString { get; set; } = string.Empty;
         public string DatabaseName { get; set; } = string.Empty;
