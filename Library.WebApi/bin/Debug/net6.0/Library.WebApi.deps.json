@@ -9,7 +9,8 @@
       "Library.WebApi/1.0.0": {
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "Library.Persistence": "1.0.0",
+          "Library.App": "1.0.0",
+          "MediatR": "11.1.0",
           "MongoDB.Driver": "2.18.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
@@ -149,29 +150,6 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration/7.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Primitives": "7.0.0"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Configuration.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.22.51805"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration.Abstractions/7.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "7.0.0"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
           }
@@ -410,17 +388,6 @@
         "runtime": {
           "Library.App.dll": {}
         }
-      },
-      "Library.Persistence/1.0.0": {
-        "dependencies": {
-          "Library.App": "1.0.0",
-          "Microsoft.Extensions.Configuration": "7.0.0",
-          "MongoDB.Bson": "2.18.0",
-          "MongoDB.Driver": "2.18.0"
-        },
-        "runtime": {
-          "Library.Persistence.dll": {}
-        }
       }
     }
   },
@@ -534,20 +501,6 @@
       "sha512": "sha512-xpidBs2KCE2gw1JrD0quHE72kvCaI3xFql5/Peb2GRtUuZX+dYPoK/NTdVMiM67Svym0M0Df9A3xyU0FbMQhHw==",
       "path": "microsoft.extensions.caching.memory/7.0.0",
       "hashPath": "microsoft.extensions.caching.memory.7.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-tldQUBWt/xeH2K7/hMPPo5g8zuLc3Ro9I5d4o/XrxvxOCA2EZBtW7bCHHTc49fcBtvB8tLAb/Qsmfrq+2SJ4vA==",
-      "path": "microsoft.extensions.configuration/7.0.0",
-      "hashPath": "microsoft.extensions.configuration.7.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Configuration.Abstractions/7.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-f34u2eaqIjNO9YLHBz8rozVZ+TcFiFs0F3r7nUJd7FRkVSxk8u4OpoK226mi49MwexHOR2ibP9MFvRUaLilcQQ==",
-      "path": "microsoft.extensions.configuration.abstractions/7.0.0",
-      "hashPath": "microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection/7.0.0": {
       "type": "package",
@@ -718,11 +671,6 @@
       "hashPath": "zstdsharp.port.0.6.2.nupkg.sha512"
     },
     "Library.App/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Library.Persistence/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

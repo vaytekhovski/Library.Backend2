@@ -15,6 +15,7 @@
     <None Remove="MongoDB.Driver" />
     <None Remove="Middleware\" />
     <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="MediatR" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Startup\" />
@@ -29,12 +30,16 @@
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Library.Domain\Library.App\Library.App.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
     <ProjectReference Include="..\Library.Persistence\Library.Persistence.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Library.App\Library.App.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>

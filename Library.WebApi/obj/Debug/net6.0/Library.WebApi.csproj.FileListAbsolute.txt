@@ -83,8 +83,6 @@
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Microsoft.Extensions.Caching.Abstractions.dll
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
-/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Microsoft.Extensions.Configuration.dll
-/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Microsoft.Extensions.Logging.dll
@@ -106,8 +104,6 @@
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/runtimes/osx/native/libmongocrypt.dylib
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/runtimes/win/native/mongocrypt.dll
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Library.App.dll
-/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Library.Persistence.dll
-/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Library.Persistence.pdb
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/bin/Debug/net6.0/Library.App.pdb
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/obj/Debug/net6.0/Library.WebApi.csproj.AssemblyReference.cache
 /Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/obj/Debug/net6.0/Library.WebApi.GeneratedMSBuildEditorConfig.editorconfig

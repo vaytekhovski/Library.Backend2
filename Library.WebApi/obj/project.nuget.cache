@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KFwS1jrhRP1uRb5PKZo2++5hG6QfWm1peTj0xFboPVa/FV0NpRcVUopBl84RTfqntcjOuR7wqOHZDleDd54VfA==",
+  "dgSpecHash": "Ro51JlBgiCmMFYqorSdEwTcUFH50zhMWVSqYsqzwBgfy8gBYGknoXKyB3buVGz8zB7Qas23WFjsxuxfWlLiHgA==",
   "success": true,
   "projectFilePath": "/Users/vaytekhovsky/projects/LibraryControl.Backend2/Library.WebApi/Library.WebApi.csproj",
   "expectedPackageFiles": [
@@ -19,8 +19,6 @@
     "/Users/vaytekhovsky/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/vaytekhovsky/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/vaytekhovsky/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
-    "/Users/vaytekhovsky/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
-    "/Users/vaytekhovsky/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "/Users/vaytekhovsky/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "/Users/vaytekhovsky/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "/Users/vaytekhovsky/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
